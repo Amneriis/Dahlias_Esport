@@ -1,0 +1,35 @@
+:root {
+    --skew-deg: 35deg;
+    --bg-color: #212121;
+    --largeur: 350px;
+  }
+
+body{
+    background: var(--bg-color);
+}
+
+.navbar{
+    display: flex;
+justify-content: center;
+}
+
+.nav-item{
+    width: var(--largeur);
+    height: 65px;
+    left: 0px;
+    top: 0px;
+    transform: skew(calc(-1 * var(--skew-deg)));
+    
+    background-image:linear-gradient(#6FC5E9, #29ABE2);
+    color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    margin-right: 2px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item span{
+    transform: skew(var(--skew-deg));
+}
