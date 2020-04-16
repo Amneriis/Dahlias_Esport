@@ -1,55 +1,59 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dahlias Esport</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <!--Block pour ajouter du css-->
+    {% block css %}{% endblock %}
 
-    <link rel="stylesheet" href="style.css">
+    <!--Block pour générer un titre en fonction de la page-->
+    <title>Dahlias Esport | {% block title %}{% endblock %}</title>
+
 </head>
 
 <body>
     <header>
-        <img src="img/PetitLogo.png" alt="logoDahliasEsport" class="logo">
+        <img src="{% static 'img/logos/PetitLogo.png' %}" alt="logoDahliasEsport" class="logo">
         <div class="navbar">
 
-            <a class="nav-item"><span>Accueil</span></a>
-            <a class="nav-item"><span>FullBloom</span></a>
-            <a class="nav-item"><span>Equipe</span></a>
-            <a class="nav-item"><span>Boutique</span></a>
+            <a class="nav-item" href="{% url 'main:accueil' %}"><span>Accueil</span></a>
+            <a class="nav-item" href="https://fullbloom.dahlias-esport.fr/"><span>FullBloom</span></a>
+            <a class="nav-item" href="{% url 'equipes/' %}"><span>Equipes</span></a>
+            <!-- <a class="nav-item" href="{% url 'boutique/' %}"><span>Boutique</span></a> -->
         </div>
     </header>
 
 
 
-    <div class="main">
 
-    </div>
 
     <!-- Site footer -->
     <footer class="site-footer">
-        <img src="img/PetitLogo.png" alt="logoDahliasEsport" class="logo">
+        <img src="{% static 'img/logos/PetitLogo.png' %}" alt="logoDahliasEsport" class="logo">
         <div class="footer-categories">
             <div class="test">
                 <h6>Dahlias</h6>
                 <ul class="footer-links">
-                    <li><a>Accueil</a></li>
-                    <li><a>Equipes</a></li>
-                    <li><a>Boutique</a></li>
-                    <li><a>FullBloom</a></li>
+                    <li><a href="{% url 'accueil/' %}">Accueil</a></li>
+                    <li><a href="https://fullbloom.dahlias-esport.fr/">FullBloom</a></li>
+                    <!-- <li><a>Boutique</a></li> -->
+                    <li><a href="{% url 'equipes/' %}">Equipes</a></li>
                 </ul>
             </div>
 
             <div class="test">
                 <h6>Equipes</h6>
                 <ul class="footer-links">
-                    <li><a href="">[DEs] Alchimyst</a></li>
-                    <li><a href="">[DEs] Academy</a></li>
-                    <li><a href="">[DEs] Raw</a></li>
-                    <li><a href="">[DEs] Blue Lagoon</a>
+                    <li><a href="{% url 'equipes/' %}">[DEs] Alchimyst</a></li>
+                    <li><a href="{% url 'equipes/' %}">[DEs] Academy</a></li>
+                    <li><a href="{% url 'equipes/' %}">[DEs] Raw</a></li>
+                    <li><a href="{% url 'equipes/' %}">[DEs] Blue Lagoon</a>
                     </li>
-                    <li><a href="">[DEs] Team Rocket</a></li>
+                    <li><a href="{% url 'equipes/' %}">[DEs] Team Rocket</a></li>
                 </ul>
             </div>
 
@@ -84,7 +88,7 @@
 
             </div>
     </footer>
-
+    {% block javascript %}{% endblock %}
 </body>
 
 </html>
