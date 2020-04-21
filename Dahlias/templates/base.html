@@ -22,8 +22,8 @@
 
             <a class="nav-item" href="{% url 'main:accueil' %}"><span>Accueil</span></a>
             <a class="nav-item" href="https://fullbloom.dahlias-esport.fr/"><span>FullBloom</span></a>
-            <a class="nav-item" href="{% url 'equipes/' %}"><span>Equipes</span></a>
-            <!-- <a class="nav-item" href="{% url 'boutique/' %}"><span>Boutique</span></a> -->
+            <a class="nav-item" href="{% url 'main:equipes' %}"><span>Equipes</span></a>
+            {# <a class="nav-item" href="{% url 'main:boutique' %}"><span>Boutique</span></a> #}
         </div>
     </header>
 
@@ -38,22 +38,22 @@
             <div class="test">
                 <h6>Dahlias</h6>
                 <ul class="footer-links">
-                    <li><a href="{% url 'accueil/' %}">Accueil</a></li>
+                    <li><a href="{% url 'main:accueil' %}">Accueil</a></li>
                     <li><a href="https://fullbloom.dahlias-esport.fr/">FullBloom</a></li>
                     <!-- <li><a>Boutique</a></li> -->
-                    <li><a href="{% url 'equipes/' %}">Equipes</a></li>
+                    <li><a href="{% url 'main:equipes' %}">Equipes</a></li>
                 </ul>
             </div>
 
             <div class="test">
                 <h6>Equipes</h6>
                 <ul class="footer-links">
-                    <li><a href="{% url 'equipes/' %}">[DEs] Alchimyst</a></li>
-                    <li><a href="{% url 'equipes/' %}">[DEs] Academy</a></li>
-                    <li><a href="{% url 'equipes/' %}">[DEs] Raw</a></li>
-                    <li><a href="{% url 'equipes/' %}">[DEs] Blue Lagoon</a>
+                    <li><a href="{% url 'main:equipes' %}">[DEs] Alchimyst</a></li>
+                    <li><a href="{% url 'main:equipes' %}">[DEs] Academy</a></li>
+                    <li><a href="{% url 'main:equipes' %}">[DEs] Raw</a></li>
+                    <li><a href="{% url 'main:equipes' %}">[DEs] Blue Lagoon</a>
                     </li>
-                    <li><a href="{% url 'equipes/' %}">[DEs] Team Rocket</a></li>
+                    <li><a href="{% url 'main:equipes' %}">[DEs] Team Rocket</a></li>
                 </ul>
             </div>
 
