@@ -1,2 +1,28 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+{#<img src="" alt="">#}
+
+<div class="reseaux">
+    <h2>Rejoignez nous !</h2>
+    <div class="link">
+        <img src="{% static 'img/logos/GrandLogo.png' %}" alt="GrandLogo" style="width: 350px;">
+        <img src="{% static 'img/reseau/twitter.png' %}" class="logo-reseaux" alt="twitter">
+        <img src="{% static 'img/reseau/discord.png' %}" class="logo-reseaux" alt="discord">
+        <img src="{% static 'img/reseau/twitch.png' %}" class="logo-reseaux" alt="twitch">
+    </div>
+
+</div>
+
+<div class="stream">
+
+</div>
+{% endblock %}
+
+{% block javascript %}
+
+{% endblock %}
