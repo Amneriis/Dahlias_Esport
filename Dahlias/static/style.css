@@ -6,6 +6,9 @@
 
 body{
     background: var(--bg-color);
+    font-family: rift, sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .navbar{
@@ -46,9 +49,9 @@ justify-content: center;
 .logo-reseaux{
   margin-right: 20px;
   margin-left: 50px;
-  margin-top: 10px;
-  width: 110px;
-  height: 110px;
+  margin-bottom: 150px;
+  width: 170px;
+  height: 170px;
 }
 
 .site-footer
@@ -154,3 +157,32 @@ justify-content: center;
 .reseaux{
   display: block;
 }
+
+.link{
+  display: block;
+ }
+
+ h2{
+   color: white;
+   text-align: center;
+   font-size: 80px;
+ }
+
+ .baniere{
+   margin-top: 1%;
+   width: 100%;
+   height: 800px;
+   box-shadow: 10px 5px 5px black;
+ }
+
+ hr{
+   margin-top: 1%;
+   margin-bottom: 1%;
+   border-color: #29ABE2;
+ }
+
+ .stream{
+   margin-top: 2%;
+   margin: 0 auto;
+   width: 80%;
+ }
