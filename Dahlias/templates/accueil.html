@@ -5,24 +5,50 @@
 
 {% block content %}
 
-{#<img src="" alt="">#}
+<img src="{% static 'img/baniere.png' %}" alt="banniere" class="baniere">
+
+<hr>
 
 <div class="reseaux">
     <h2>Rejoignez nous !</h2>
-    <div class="link">
-        <img src="{% static 'img/logos/GrandLogo.png' %}" alt="GrandLogo" style="width: 350px;">
-        <img src="{% static 'img/reseau/twitter.png' %}" class="logo-reseaux" alt="twitter">
-        <img src="{% static 'img/reseau/discord.png' %}" class="logo-reseaux" alt="discord">
-        <img src="{% static 'img/reseau/twitch.png' %}" class="logo-reseaux" alt="twitch">
-    </div>
 
+    <img src="{% static 'img/logos/GrandLogo.png' %}" alt="GrandLogo" style="width: 850px;">
+    <a href="https://twitter.com/dahliasesport?lang=fr"> <img src="{% static 'img/reseau/twitter.png' %}"
+            class="logo-reseaux" alt="twitter"></a>
+    <a href="https://discord.gg/wtckEQ7"> <img src="{% static 'img/reseau/discord.png' %}" class="logo-reseaux"
+            alt="discord"></a>
+    <a href="https://www.twitch.tv/dahlias_esport/"><img src="{% static 'img/reseau/twitch.png' %}" class="logo-reseaux"
+            alt="twitch"></a>
 </div>
 
+<hr>
+
 <div class="stream">
+    <div class="slider single-item">
+        <div>
+            <img class="img-slider" src="{% static 'img/stream1.png' %}" alt="stream1">
+        </div>
+        <div>
+            <img class="img-slider" src="{% static 'img/stream1.png' %}" alt="stream1">
+        </div>
+        <div>
+            <img class="img-slider" src="{% static 'img/stream1.png' %}" alt="stream1">
+        </div>
+    </div>
 
 </div>
 {% endblock %}
 
 {% block javascript %}
+<script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+<script type="text/javascript">
+    $('.single-item').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+    });
+</script>
+
 
 {% endblock %}

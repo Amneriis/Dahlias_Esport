@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}" />
+        <link rel="stylesheet" href="{% static 'slick/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}" />
+
     <!--Block pour ajouter du css-->
     {% block css %}{% endblock %}
 
@@ -90,6 +93,8 @@
 
             </div>
     </footer>
+
+    <script type="text/javascript" src="{% static 'jquery/jquery-3.4.1.min.js' %}"></script>
     {% block javascript %}{% endblock %}
 </body>
 
