@@ -1,0 +1,32 @@
+body{
+    background: var(--bg-color);
+    font-family: rift, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+}
+
+.img{
+    border-radius: 50px;
+ }
+
+ .team{
+    margin-top: 2%;
+    padding-right: 25%;
+    padding-left: 25%;
+    width: 1100px;
+ }
+
+ .player{
+    width: 350px;
+    column-count: 2;
+    display: inline-block;
+}
+
+.role{
+    padding-top: 20px;
+}
+
+.player{
+    padding-bottom: 10px;
+}
